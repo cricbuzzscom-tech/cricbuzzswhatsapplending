@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Cricbuzzs</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px 12px;
+}
+
+.container {
+    width: 100%;
+    max-width: 430px;
+    margin: auto;
+}
+
+.poster {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.whatsapp-btn {
+    display: block;
+    width: 100%;
+    background: #25D366;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 17px 15px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    transition: 0.2s;
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+}
+
+.disclaimer {
+    color: #bbbbbb;
+    font-size: 12px;
+    line-height: 1.8;
+    padding: 10px 5px;
+}
+
+.disclaimer strong {
+    color: #ff4444;
+    font-size: 14px;
+}
+
+.footer {
+    margin-top: 12px;
+    color: #777777;
+    font-size: 11px;
+}
+</style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];
+t=b.createElement(e);t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '2188275761760207');
+</script>
+<!-- End Meta Pixel Code -->
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Cricbuzzs Poster -->
+    <img src="poster.jpg" alt="Cricbuzzs Poster" class="poster">
+
+    <!-- WhatsApp Button -->
+    <a
+        href="https://wa.me/917050672220?text=Hello%2C%20I%20want%20more%20information."
+        class="whatsapp-btn"
+        id="whatsappBtn"
+        target="_blank"
+        rel="noopener noreferrer">
+        💬 Chat on WhatsApp
+    </a>
+
+    <!-- Disclaimer -->
+    <div class="disclaimer">
+        <strong>18+ ONLY</strong><br>
+        Please play responsibly.<br>
+        Bonus, Commission, Referral & Reward information<br>
+        Terms & Conditions Apply.
+    </div>
+
+    <div class="footer">
+        © Cricbuzzs
+    </div>
+
+</div>
+
+<!-- WhatsApp Button Contact Event -->
+<script>
+document.getElementById('whatsappBtn').addEventListener('click', function() {
+    if (typeof fbq === 'function') {
+        fbq('track', 'Contact');
+    }
+});
+</script>
+
+</body>
+</html>
